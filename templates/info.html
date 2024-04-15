@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats paradise</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Cats paradise!</h1>
+    <div class="info">
+        <div class="text statistic">
+            <h2>About us</h2>
+            <p class="about us">This is an educational web application implemented within the framework of the Python programming online course, E240919, Omnia.</p>
+            <div class="subheading"> </div>
+            <h2>Download files</h2>
+            <a href="{{ url_for('get_cats') }}">Cats API</a>
+            <form action="/generate_json" method="GET">
+                <button type="submit">Generate JSON and Download</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+{% endblock %}

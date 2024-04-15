@@ -1,0 +1,152 @@
+h1 {
+    background-image: linear-gradient(to right, #4CAF50, #2196F3); /* Градиентный фон */
+    -webkit-background-clip: text; /* Применяем фон к тексту */
+    background-clip: text; /* Применяем фон к тексту */
+    color: transparent; /* Делаем текст прозрачным */
+    padding: 10px; /* Отступ вокруг текста */
+    border-radius: 10px; /* Закругленные края */
+    margin-top: 0; /* Убираем верхний отступ */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    text-align: center; /* Центрируем текст заголовка */
+}
+
+title {
+    /* Ваши стили для элемента title */
+    background-image: linear-gradient(to right, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 24px; /* Размер шрифта */
+}
+
+
+.cat {
+    border: 2px solid #add8e6;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto; /* Высота автоматически определяется содержимым */
+    overflow: auto; /* Разрешаем прокрутку, если содержимое блока не помещается */
+}
+
+.cat img {
+    max-width: 200px; /* Максимальная ширина изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    margin: 0 auto -10px; /* Центрируем изображение и добавляем немного отступа снизу */
+}
+
+.cat-name {
+    font-size: larger; /* Увеличиваем размер шрифта */
+    text-transform: uppercase; /* Преобразуем текст в капитель */
+    background: linear-gradient(to right, #4CAF50, #008CBA); /* Градиентный фон */
+    -webkit-background-clip: text; /* Применяем фон к тексту */
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Делаем текст невидимым */
+    font-weight: bold; 
+}
+
+.cat-description {
+    margin-bottom: 10px; /* Увеличил отступ между описанием и следующим блоком .cat */
+    text-align: justify; /* Выравниваем текст по ширине */
+}
+
+.cat-info {
+    background-color: #f0f0f0; /* Нежно серый фон */
+    padding: 10px; /* Отступ вокруг содержимого */
+    float: center; /* Выравнивание блока справа */
+    max-width: auto; /* Максимальная ширина блока */
+    text-align: left;
+    border-bottom-right-radius: 20px;
+}
+
+.cat-info p {
+    margin: 0; /* Убираем внешние отступы у абзацев */
+    white-space: nowrap; /* Предотвращаем перенос текста */
+}
+
+.cat-details {
+    padding: 10px;
+}
+
+.cat-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px; /* Отступ сверху, чтобы разделить информацию о коте и информацию о коте */
+}
+
+.cat + .cat {
+    margin-top: 20px; /* Отступ сверху между блоками котов */
+}
+
+.statistic {
+    background: none; /* Убираем фон */
+    padding: 20px; /* Отступ вокруг содержимого */
+    border-radius: 10px; /* Закругленные края */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 20px auto; /* Центрирование блока */
+    max-width: 600px; /* Максимальная ширина блока */
+}
+
+.statistic h1 {
+    background-image: linear-gradient(to right, #4CAF50, #2196F3); /* Градиентный фон */
+    -webkit-background-clip: text; /* Применяем фон к тексту */
+    background-clip: text; /* Применяем фон к тексту */
+    color: transparent; /* Делаем текст прозрачным */
+    padding: 10px; /* Отступ вокруг текста */
+    border-radius: 10px; /* Закругленные края */
+    margin-top: 0; /* Убираем верхний отступ */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+.statistic h2 {
+    background-image: linear-gradient(to right, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px; /* Размер шрифта */
+    text-align: center; 
+}
+
+
+.subheading {
+    font-size: 20px; /* Увеличиваем размер подзаголовков */
+    text-decoration: underline; /* Подчеркивание */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+    position: relative; /* Позиционирование элементов */
+}
+
+.subheading::before {
+    content: ""; /* Пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10%; /* Положение относительно верхнего края родительского элемента */
+    left: 0; /* Положение слева */
+    width: 100%; /* Ширина */
+    height: 2px; /* Высота */
+    background-color: rgba(177, 179, 172, 0.909); /* Цвет линии */
+}
+
+.statistic .subtitle {
+    font-size: larger; /* Увеличиваем размер подзаголовков */
+    font-weight: bold; /* Делаем подзаголовки жирными */
+    margin-bottom: 10px; /* Отступ между подзаголовками и следующими данными */
+    padding-bottom: 5px; /* Добавляем отступ под линией */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Светло-серая линия между подзаголовками */
+}
+
+

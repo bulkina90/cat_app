@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Paradise</title>
+    <!-- Здесь могут быть подключены CSS стили -->
+    <style>
+
+        /* Стили для горизонтального меню */
+
+        header {
+            width: 100%; /* Ширина занимает всю доступную ширину */
+            text-align: center; /* Центрирование содержимого по горизонтали */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: linear-gradient(to right, #add8e6, #90ee90); /* Градиент от светло синего к светло зеленому */
+           
+            text-align: center; /* Центрирование элементов списка по горизонтали */
+        }
+
+        nav li {
+            display: inline-block; /* Располагаем элементы списка в одну строку */
+        }
+
+        nav li a {
+            display: block;
+            color: #333; /* Цвет текста ссылок */
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #ddd; /* Цвет фона при наведении на ссылку */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cat">Cat</a></li>
+                <li><a href="/info">Info</a></li>
+                <li><a href="/statistic">Statistic</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Область для вставки содержимого каждой страницы -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Здесь могут быть подключены JS скрипты -->
+</body>
+</html>

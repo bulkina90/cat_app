@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats paradise!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>STATISTICS</h1>
+    <div class="statistic">        
+        <h2>Total number of cat breeds</h2>
+        <p>{{ data['total_num_of_cats'] }}</p>
+        
+        <div class="subheading"> </div>
+        <h2>Weight</h2>
+        <p>Minimum weight: {{ data['weight']['min'] }}</p>
+        <p>Maximum weight: {{ data['weight']['max'] }}</p>
+        <p>Average weight: {{ data['weight']['average'] }}</p>
+        
+        <div class="subheading"> </div>
+        <h2>Life Span</h2>
+        <p>Minimum life span: {{ data['life_span']['min'] }}</p>
+        <p>Maximum life span: {{ data['life_span']['max'] }}</p>
+        <p>Average life span: {{ data['life_span']['average'] }}</p>
+    </div>
+</body>
+</html>
+{% endblock %}

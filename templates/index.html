@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats paradise</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome in cats paradise!</h1>
+    {% for cat in cats %}
+    <div class="cat">
+        <img src="{{ cat['image'] }}" alt="{{ cat['name'] }}" class="cat-image">
+        <div class="cat-details">
+            <p class="cat-name">{{ cat['name'] }}</p>
+            <p class="cat-description">{{ cat['description'] }}</p>
+            <div class="cat-info">
+                <p>Weight: {{ cat['weight'] }}</p>
+                <p>Life span: {{ cat['life_span'] }}</p>
+                <p>Temperament: {{ cat['temperament'] }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
+{% endblock %}
